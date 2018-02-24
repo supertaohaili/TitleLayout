@@ -2,14 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/rl_title_bar_height"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/red">
+    android:layout_height="match_parent">
 
-    <!--<RelativeLayout-->
-    <!--android:id="@+id/rl_title_bar_height"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="match_parent"-->
-    <!--android:background="@color/red">-->
     <LinearLayout
         android:id="@+id/ll_center"
         android:layout_width="match_parent"
@@ -50,7 +44,7 @@
             android:id="@+id/iv_left"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
             android:src="@drawable/icon_back"
             android:visibility="visible" />
 
@@ -60,7 +54,7 @@
             android:layout_height="match_parent"
             android:layout_toRightOf="@id/iv_left"
             android:gravity="center"
-            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
             android:text="返回"
             android:visibility="visible" />
     </RelativeLayout>
@@ -69,14 +63,14 @@
         android:id="@+id/rl_right"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_alignParentEnd="true">
+        android:layout_alignParentRight="true">
 
         <ImageView
             android:id="@+id/iv_right"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_centerInParent="true"
-            android:paddingEnd="10dp"
+            android:paddingRight="10dp"
             android:src="@drawable/icon_collection"
             android:visibility="invisible" />
 
@@ -85,7 +79,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:paddingEnd="10dp"
+            android:paddingRight="10dp"
             android:text="搜索"
             android:visibility="gone" />
     </RelativeLayout>

@@ -1,19 +1,8 @@
 package com.siberiadante.titlelayoutlib.utils;
 
-import android.app.Activity;
-import android.util.DisplayMetrics;
-import android.util.TypedValue;
-
 import com.siberiadante.titlelayoutlib.TitleLayoutLib;
 
 public class TransitionTools {
-    public static float getDensity(Activity activity) {
-        //屏幕dpi
-        DisplayMetrics displayMetrics = new DisplayMetrics();
-        activity.getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
-        return displayMetrics.density;
-    }
-
     /**
      * dip转为 px
      */
@@ -33,17 +22,6 @@ public class TransitionTools {
     }
 
     /**
-     * Api方法转换
-     *
-     * @param dpValue
-     * @return
-     */
-    public static int dp2px(float dpValue) {
-
-        return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dpValue, TitleLayoutLib.getContext().getResources().getDisplayMetrics());
-    }
-
-    /**
      * 将px值转换为sp值，保证文字大小不变
      *
      * @param pxValue
@@ -54,14 +32,4 @@ public class TransitionTools {
         return (int) (pxValue / fontScale + 0.5f);
     }
 
-    /**
-     * 将sp值转换为px值，保证文字大小不变
-     *
-     * @param spValue
-     * @return
-     */
-    public static int sp2px(float spValue) {
-        final float fontScale = TitleLayoutLib.getContext().getResources().getDisplayMetrics().scaledDensity;
-        return (int) (spValue * fontScale + 0.5f);
-    }
 }

@@ -5,9 +5,6 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.graphics.Typeface;
-import android.support.annotation.AttrRes;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -31,10 +28,6 @@ import com.siberiadante.titlelayoutlib.utils.TransitionTools;
  * 支持左侧返回按钮不需要手动实现页面返回；
  * 支持左侧按钮，中间标题，右边按钮点击
  * 左侧支持图片+文字、单独图片、单独文字；右侧支持单独图片、单独文字等。
- * @Time: 2017/9/12
- * @UpDate:
- * @Email: 994537867@qq.com
- * @GitHub: https://github.com/SiberiaDante
  */
 
 public class TitleBarLayout extends RelativeLayout {
@@ -98,15 +91,15 @@ public class TitleBarLayout extends RelativeLayout {
     private Context mContext;
     private int mScreenWidth;
 
-    public TitleBarLayout(@NonNull Context context) {
+    public TitleBarLayout( Context context) {
         this(context, null);
     }
 
-    public TitleBarLayout(@NonNull Context context, @Nullable AttributeSet attrs) {
+    public TitleBarLayout( Context context,  AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public TitleBarLayout(@NonNull Context context, @Nullable AttributeSet attrs, @AttrRes int defStyleAttr) {
+    public TitleBarLayout( Context context,  AttributeSet attrs,  int defStyleAttr) {
         super(context, attrs, defStyleAttr);
 
         mContext = context;

@@ -3,14 +3,6 @@ package com.siberiadante.titlelayoutlib;
 import android.annotation.SuppressLint;
 import android.content.Context;
 
-/**
- * @Created SiberiaDante
- * @Describe：
- * @Time: 2017/9/13
- * @UpDate:
- * @Email: 994537867@qq.com
- * @GitHub: https://github.com/SiberiaDante
- */
 
 public class TitleLayoutLib {
 
